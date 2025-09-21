@@ -62,7 +62,7 @@ function Deploy-Mod {
     } else {
         Get-ChildItem -Path $modTargetDir | Remove-Item -Recurse -Force
     }
-    $filesToCopy = @("modinfo.lua","modmain.lua")
+    $filesToCopy = @("modinfo.lua","modmain.lua","modicon.tex","modicon.xml","preview.jpg")
     foreach ($file in $filesToCopy) {
         $src = Join-Path $projectDir $file
         Copy-Item -Path $src -Destination $modTargetDir -Force

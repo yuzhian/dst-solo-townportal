@@ -1,5 +1,11 @@
 name = "单人传送塔"
-description = "单人传送塔：触摸懒人传送塔，可在地图中自由传送到其他懒人传送塔。"
+description = [[
+单人传送塔：触摸懒人传送塔，打开地图，选择目标，允许传送到任意传送塔。
+
+传送部分根据模组修改:
+[巨兽掉落加强](https://steamcommunity.com/sharedfiles/filedetails/?id=2788995386)
+[单人传送塔](https://steamcommunity.com/sharedfiles/filedetails/?id=3389031461)
+]]
 author = "yuzhian"
 version = "0.0.1"
 forumthread = ""
@@ -9,6 +15,8 @@ dst_compatible = true
 client_only_mod = false
 all_clients_require_mod = true
 server_filter_tags = {}
+icon_atlas = "modicon.xml"
+icon = "modicon.tex"
 
 configuration_options = {
     {
@@ -24,7 +32,7 @@ configuration_options = {
     {
         name = "open_map_delay",
         label = "地图弹出延迟",
-        hover = "触摸传送塔后延迟弹出地图的时间，单位为秒。",
+        hover = "触摸传送塔后延迟弹出地图的时间，单位为秒，禁用自动弹出地图时此项无效。",
         options = {
             { description = "0", data = 0 },
             { description = "0.5", data = 0.5 },

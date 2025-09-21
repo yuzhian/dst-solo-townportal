@@ -2,7 +2,7 @@ local Teleporter = require("components/teleporter")
 
 
 ------------------------------------------------------------
---本文件复制自: 单人传送塔(3389031461)
+--本文件复制自: 单人传送塔(3389031461) :: 最终来源貌似来自 巨兽掉落加强(2788995386)
 ------------------------------------------------------------
 local function NoHoles(pt)
     return not TheWorld.Map:IsPointNearHole(pt)
